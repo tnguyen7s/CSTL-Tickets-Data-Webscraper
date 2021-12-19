@@ -9,7 +9,7 @@
 ````
 python -m venv env
 ````
-- Then change to the env/scripts directory where all external dependencies live in.
+- Then change to the env/scripts directory.
 ````
 cd env
 cd scripts
