@@ -7,6 +7,7 @@
 
 
 ## Installation and Running the Project
+### Set up the environment
 - After you have cloned the repos to a directory in your local computer, you deletes the existing environment "whd-env" inside the repos and recreates a new environment by typing the following command in the terminal of the VS Code.
 ````
 python -m venv env
