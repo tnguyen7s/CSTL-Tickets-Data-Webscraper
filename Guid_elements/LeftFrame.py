@@ -5,7 +5,6 @@ import traceback
 from tkinter import Button, Canvas, Entry, Frame, Label, Listbox, PhotoImage, Scrollbar, StringVar, messagebox
 from tkinter.constants import ANCHOR, BOTH, BOTTOM, CENTER, E, END, HORIZONTAL, LEFT, RIGHT, S, TOP, W
 from tkinter.font import BOLD, Font
-from PIL import Image,ImageTk
 from pyodbc import IntegrityError
 
 from Enums.GuidParameter import GuidParameter
@@ -22,7 +21,7 @@ class LeftFrame:
         self.whd_scrapper = None
         if (tab_name=="update_tab"):
             self.whd_scrapper = WHDScrapper()
-            self.whd_scrapper.login(self.config["WHD"]["USERNAME"], self.config["WHD"]["PASSWORD"])
+            #self.whd_scrapper.login(self.config["WHD"]["USERNAME"], self.config["WHD"]["PASSWORD"]) (if comment this, we disable the scrapping functionality)
 
         self.first = True
 

@@ -3,9 +3,10 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from Enums.WorkerEnum import WorkerEnum
 from selenium.common.exceptions import StaleElementReferenceException
 import json
+
+from Enums.WorkerEnum import WorkerEnum
 
 class WHDScrapper:
     """

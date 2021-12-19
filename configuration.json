@@ -5,8 +5,8 @@
     "WHD":{
         "URL": "https://whd.semo.edu/helpdesk/WebObjects/Helpdesk.woa",
         "TITLE": "Web Help Desk",
-        "USERNAME": "sw01cstl-tech",
-        "PASSWORD": "CSTL-Tech01!"
+        "USERNAME": "",
+        "PASSWORD": ""
     },
 
     "HTML_ELEMENT":{
