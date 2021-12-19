@@ -1,7 +1,5 @@
 # CSTL-Tickets-Data-Webscraper
-## 
-Project Description
-##
+###A Project Description
 - In this project, I utilized Se
 - lenium packages to scrape data from Web Help Desk website to collect monthly ticket data replacing the manual method and automate the monthly task at my working place (CTL). 
 - The application provides a UI using Tkinter packages to give inputs to the scraper and to view and insert the collected data to the SQL Server database.
