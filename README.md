@@ -7,6 +7,73 @@
 
 
 ## Installation and Running the Project
+### Create a database
+You can create the database for the project in any DBMS (MySQL, Microsoft SQL Server) based on your choice. Following is the SQL code that you can copy to create the database.
+````
+CREATE TALBE BreakdownByContactType
+(StartTime Date NOT NULL, 
+EndTime Date NOT NULL,
+ContactType nvarchar(20) NOT NULL, 
+NumberOfTickets int,
+PRIMARY KEY (StartTime, EndTime, ContactType);
+````
+
+````
+CREATE TABLE BreakdownByRequestType
+(StartTime Date NOT NULL,
+EndTime Date NOT NULL,
+RequestType nvarchar(60) NOT NULL,
+NumberOfTickets int,
+PRIMARY KEY (StartTime, EndTime, RequestType);
+````
+
+````
+CREATE TABLE BreakdownByCanvasType
+(StartTime Date NOT NULL,
+EndTime Date NOT NULL,
+CanvasType nvarchar(100) NOT NULL,
+NumberOfTickets int,
+PRIMARY KEY (StartTime, EndTime, CanvasType);
+SELECT * FROM BreakdownByCanvasType;
+````
+
+````
+CREATE TABLE HandleBy
+(WorkerEnum int NOT NULL PRIMARY KEY,
+CSTLWorker nvarchar(30));
+
+INSERT INTO HandleBy VALUES
+(0, 'Everyone'),
+(1, 'Student Worker'),
+(2, 'GA'),
+(4, 'Kris Baranovic'),
+(3, 'Mary Harriet');
+````
+````
+CREATE TABLE SupportTicketAssignedTech
+(StartTime Date NOT NULL,
+EndTime Date NOT NULL,
+Tech nvarchar(50) NOT NULL, 
+NumberOfTickets int,
+PRIMARY KEY (StartTime, EndTime, Tech));
+SELECT * FROM SupportTicketAssignedTech;
+````
+````
+CREATE TABLE CSTLConsult
+(StartTime Date NOT NULL,
+EndTime Date NOT NULL,
+FacultyName nvarchar(50) NOT NULL,
+ConsultByWorkerEnum int NOT NULL,
+ConsultTimes int,
+PRIMARY KEY (StartTime, EndTime, FacultyName, ConsultByWorkerEnum),
+FOREIGN KEY (ConsultByWorkerEnum) REFERENCES HandleBy(WorkerEnum));
+SELECT * FROM CSTLConsult;
+````
+
+````
+CREATE TABLE ReportTime (StartTime Date NOT NULL, EndTime Date NOT NULL, PRIMARY KEY(StartTime, EndTime));
+````
+
 ### Set up the environment
 - After you have cloned the repos to a directory in your local computer, you deletes the existing environment "whd-env" inside the repos and recreates a new environment by typing the following command in the terminal of the VS Code.
 ````
