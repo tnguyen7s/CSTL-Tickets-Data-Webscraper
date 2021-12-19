@@ -22,3 +22,6 @@ cd scripts
 ````
 pip install selenium
 ````
+- Last but not least, you change the interpreter that is located in the environment that you have just created (env).
+![image](https://user-images.githubusercontent.com/70489535/146679370-32f63b37-3ac0-4227-99c8-bc10d6f9a559.png)
+
