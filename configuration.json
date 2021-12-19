@@ -1,0 +1,56 @@
+{
+    "DATABASE": {
+        "SQL_CONNECTION_STRING": "Driver={ODBC Driver 17 for SQL Server};Server=localhost\\SQLEXPRESS;Database=cstl;Trusted_Connection=yes;"
+    },
+    "WHD":{
+        "URL": "https://whd.semo.edu/helpdesk/WebObjects/Helpdesk.woa",
+        "TITLE": "Web Help Desk",
+        "USERNAME": "sw01cstl-tech",
+        "PASSWORD": "CSTL-Tech01!"
+    },
+
+    "HTML_ELEMENT":{
+        "LINK_TAG":{
+            "BY_CONTACT_TYPE_REPORT_SHADED": "tr.shaded:nth-child(3) > td:nth-child(1) > a:nth-child(1)",
+            "BY_REQUEST_TYPE_REPORT_WHITE": "tr.white:nth-child(4) > td:nth-child(1) > a:nth-child(1)",
+            "BY_CANVAS_TYPE_REPORT_WHITE": "tr.white:nth-child(2) > td:nth-child(1) > a:nth-child(1)",
+            "FIVE_MOST_FREQUENT_ISSUES_REPORT_WHITE": "tr.white:nth-child(5) > td:nth-child(1) > a:nth-child(1)",
+            "FIVE_MOST_FREQUENT_ISSUES_REPORT_SHADED": "tr.shaded:nth-child(5) > td:nth-child(1) > a:nth-child(1)",
+            "SUPPORT_TICKET_ASSIGNED_TECH_REPORT_SHADED": "tr.shaded:nth-child(14) > td:nth-child(1) > a:nth-child(1)",
+            "SUPPORT_TICKET_ASSIGNED_TECH_REPORT_WHITE": "tr.white:nth-child(14) > td:nth-child(1) > a:nth-child(1)",
+            "TOP_10_FACULTY_WHO_CONSULT_WITH_REPORT_SHADED": "tr.shaded:nth-child(26) > td:nth-child(1) > a:nth-child(1)",
+            "TOP_10_FACULTY_WHO_CONSULT_WITH_REPORT_WHITE": "tr.white:nth-child(26) > td:nth-child(1) > a:nth-child(1)"
+        },
+        "BUTTON":{
+            "REPORT": ".reportsButton",
+            "SELECTED_REPORT": ".reportsButtonSelected",
+            "RUN_REPORT": ".buttonsLeft > a:nth-child(2) > div:nth-child(1) > div:nth-child(2)",
+            "NEXT": "tr.DGBrowser > td:nth-child(7) > a:nth-child(1)",
+            "REPORT_FILTER": "#TabPanelUpdateContainer > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(1) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(3)",
+            "ASSIGNED_TECH": ".shaded > td:nth-child(1) > a:nth-child(1)",
+            "DELETE": ".buttonsRight > a:nth-child(1) > div:nth-child(1)",
+            "NEW": "a.aquaButtonLink:nth-child(4) > div:nth-child(1)",
+            "SAVE": "a.aquaButtonLink:nth-child(4) > div:nth-child(1)",
+            "DONE": ".buttonsRight > a:nth-child(2) > div:nth-child(1) > div:nth-child(2)"
+        },
+        "DROP_DOWN_MENU":{
+            "FILTER_ATTRIBUTE":{
+                "ASSIGNED_TECH": "#listTable > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(2) > div:nth-child(1) > select:nth-child(1) > option:nth-child(11)"
+            } 
+        },
+        "CHECK_BOX":{
+            "STUDENT_WORKER_1": ".checkboxSet > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(43) > td:nth-child(1) > input:nth-child(1)",
+            "STUDENT_WORKER_2": ".checkboxSet > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(44) > td:nth-child(1) > input:nth-child(1)",
+            "GA": ".checkboxSet > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(18) > td:nth-child(1) > input:nth-child(1)",
+            "KRIS": ".checkboxSet > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(5) > td:nth-child(1) > input:nth-child(1)",
+            "MARY": ".checkboxSet > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(45) > td:nth-child(1) > input:nth-child(1)"
+        },
+        "INPUT_BOX":{
+            "FROM": "#date_7_37_0_0_0_0_2_1_0_2_1_0_1_0_1_3_1_3_1_2_43_1_1_0_1_1",
+            "TO": "#date_7_37_0_0_0_0_2_1_0_2_1_0_1_0_1_3_1_3_1_2_43_1_3_0_1_1"
+        },
+        "TABLE":"#tableData > table > tbody > tr > td"
+    },
+    "DIRECTORY": "c:\\Users\\Tuyen\\Downloads\\",
+    "Number" : 9
+}
